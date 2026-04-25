@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <meta name="description" content="Play these when you need me. A personal collection of voice notes.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars-overlay"></div>
+    <div class="glow-blob"></div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="fade-in">For You.</h1>
+            <p class="subtitle fade-in">Play these when you need me.</p>
+        </header>
+
+        <section class="notes-grid">
+            <!-- Cards will be injected by JS or hardcoded for better SEO/Control -->
+            <div class="note-card fade-in" data-note="sad">
+                <button class="expand-btn">Play when you’re sad</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/sad.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">It’s okay to feel this way.</div>
+
+            <div class="note-card fade-in" data-note="miss">
+                <button class="expand-btn">Play when you miss me</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/miss.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">I’m never truly far.</div>
+
+            <div class="note-card fade-in" data-note="sleep">
+                <button class="expand-btn">Play when you can’t sleep</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/sleep.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">Close your eyes, breathe.</div>
+
+            <div class="note-card fade-in" data-note="alone">
+                <button class="expand-btn">Play when you feel alone</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/alone.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">I’m right here with you.</div>
+
+            <div class="note-card fade-in" data-note="happy">
+                <button class="expand-btn">Play when you’re happy</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/happy.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">Cherish this moment.</div>
+
+            <div class="note-card fade-in" data-note="unsure">
+                <button class="expand-btn">Play when you wish you could talk to me… but you’re not sure if you
+                    should</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/unsure.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">You can always talk to me.</div>
+
+            <div class="note-card fade-in" data-note="wish">
+                <button class="expand-btn">Play when you really wish I was there… but I’m not</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/wish.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">In spirit, I am.</div>
+
+            <div class="note-card fade-in" data-note="upset">
+                <button class="expand-btn">Play when you’re upset with something I’ve done</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/upset.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider fade-in">I'm sorry for the hurt.</div>
+
+            <div class="note-card fade-in" data-note="forgive">
+                <button class="expand-btn">Play when you wish you could forgive me… but you’re not able to</button>
+                <div class="player-container">
+                    <div class="audio-player">
+                        <audio src="audio/forgive.mp4"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <span class="time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="note-card fade-in" data-note="split">
+                <button class="expand-btn">Open only if you think we are gonna split apart <span
+                        class="disclaimer">(funny)</span></button>
+                <div class="player-container">
+                    <div class="image-reveal">
+                        <img src="images/split_apart.jpeg" alt="Funny reminder" class="reveal-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="final-message fade-in">
+                No matter where life takes me, or how busy things get… I’m always here for you in some way. You’re not
+                alone. Not now, not ever.
+            </p>
+            <div class="reveal-section fade-in">
+                <button id="one-last-thing" class="reveal-btn">One last thing</button>
+                <p id="hidden-message" class="hidden">You’re my soulmate. And I mean that.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
