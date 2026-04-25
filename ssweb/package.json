@@ -1,0 +1,12 @@
+{
+  "name": "for-you-play-when",
+  "version": "1.0.0",
+  "description": "A personal voice note player website.",
+  "main": "index.html",
+  "scripts": {
+    "start": "servor . index.html 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
